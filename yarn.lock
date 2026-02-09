@@ -51,9 +51,6 @@ __metadata:
 "app-a@workspace:apps/app-a":
   version: 0.0.0-use.local
   resolution: "app-a@workspace:apps/app-a"
-  dependencies:
-    pkg-a: "workspace:*"
-    tooling-config: "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -62,7 +59,6 @@ __metadata:
   resolution: "app-b@workspace:apps/app-b"
   dependencies:
     got: "npm:^9.6.0"
-    tooling-config: "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -234,22 +230,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pkg-a@workspace:*, pkg-a@workspace:packages/pkg-a":
-  version: 0.0.0-use.local
-  resolution: "pkg-a@workspace:packages/pkg-a"
-  dependencies:
-    tooling-config: "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"pkg-b@workspace:packages/pkg-b":
-  version: 0.0.0-use.local
-  resolution: "pkg-b@workspace:packages/pkg-b"
-  dependencies:
-    tooling-config: "workspace:*"
-  languageName: unknown
-  linkType: soft
-
 "prepend-http@npm:^2.0.0":
   version: 2.0.0
   resolution: "prepend-http@npm:2.0.0"
@@ -282,12 +262,6 @@ __metadata:
   checksum: 10c0/79cb836e2fb4f2885745a8c212eab7ebc52e93758ff0737feceaed96df98e4d04b8903fe8c27f2e9f3f856a5068ac332918b235c5d801b3efe02a51a3fa0eb36
   languageName: node
   linkType: hard
-
-"tooling-config@workspace:*, tooling-config@workspace:packages/tooling-config":
-  version: 0.0.0-use.local
-  resolution: "tooling-config@workspace:packages/tooling-config"
-  languageName: unknown
-  linkType: soft
 
 "turbo-darwin-64@npm:2.8.3-canary.14":
   version: 2.8.3-canary.14
